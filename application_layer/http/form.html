@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Limav-Game-Of-Thrones-Stark.ico" type="image/x-icon">
+    <title>Got Form</title>
+    <link rel="stylesheet" href="styles/form.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title" class="title-text">Game of Thrones</h1>
+        <p id ="description" class="simple-text">Last Season Poll</p>
+    </header>
+    
+    
+    <main id="main-div">
+        <form id="survey-form">
+            <p classs="simple-text">Tell us what you think of the last season of the showcase</p>
+            
+            <section id="name-div" class="input-text">
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </section>
+            <hr>
+            <section id="email-div" class="input-text">
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </section>
+            <hr>
+            <section id="age-div" class="input-text">
+                <label id="number-label" for="number">Age <small>(optional)</small></label>
+                <input type="number" id="number" name="age" min="0" max="100" placeholder="Age">
+            </section>
+            <hr>
+            <section id="best-div">
+                <label for="dropdown" id="dropdown">
+                    Choose the best episode of the last season:
+                </label>
+                <select name="dropdown" id="dropdown">
+                    <option value="ep1">01 - Winterfell</option>
+                    <option value="ep2">02 - A Knight  of The Seven Kingdoms</option>
+                    <option value="ep3">03 - The Long Night</option>
+                    <option value="ep4">04 - the Last of the Starks</option>
+                    <option value="ep5">05 - the Bells</option>
+                    <option value="ep6">06 - The Iron Throne</option>
+                </select>
+            </section>
+            <hr>
+            <fieldset id="strong-div">
+                <legend>What was the strongest   part of the season?</legend>
+                <div>
+                    <input id="script" type="radio" name="strong-part" value="script"> 
+                    <label for="script" >The script</label>
+                </div>
+                
+                <div>
+                    <input id="cgi" type="radio" name="strong-part" value="cgi"> 
+                    <label for="cgi" >The CGI</label>
+                </div>
+                
+                <div>
+                    <input id="soundtrack" type="radio" name="strong-part" value="soundtrack"> 
+                    <label for="soundtrack" >The Soundtrack</label>
+                </div>
+                
+                <div>
+                    <input id="battle" type="radio" name="strong-part" value="battle"> 
+                    <label for="battle" >The battles</label>
+                </div>
+                <div>
+                    <input id="other" type="radio" name="strong-part" value="other"> 
+                    <label for="other">Other <small>(describe below)</small>:</label>
+                </div>
+                <input type="text" id="other" name="other" placeholder="Describe here">
+            
+            </fieldset>
+            <hr>
+            <fieldset id="weak-div">
+                <legend>What was the weakest part of the season?</legend>
+                
+                <div>
+                    <input id="script" type="radio" name="weak-part" value="script"> 
+                    <label for="script" >The script</label>
+                </div>
+                
+                <div>
+                    <input id="cgi" type="radio" name="weak-part" value="cgi"> 
+                    <label for="cgi" >The CGI</label>
+                </div>
+                
+                <div>
+                    <input id="soundtrack" type="radio" name="weak-part" value="soundtrack"> 
+                    <label for="soundtrack" >The Soundtrack</label>
+                </div>
+                
+                <div>
+                    <input id="battle" type="radio" name="weak-part" value="battle"> 
+                    <label for="battle" >The battles</label>
+                </div>
+                <div>
+                    <input id="other" type="radio" name="weak-part" value="other"> 
+                    <label for="other">Other <small>(describe below)</small>:</label>
+                </div>
+                <input type="text" id="other" name="other" placeholder="Describe here">
+            </fieldset>
+            <hr>
+            <fieldset id="dead-list">
+                <legend>Characters that you thought would die before watching the season</legend>
+                <div>
+                    <input type="checkbox" name="dead-char" id="arya" value="arya">
+                    <label for="arya">Arya Stark</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="dead-char" id="brienne" value="brienne">
+                    <label for="brienne">Brienne of Tarth</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="dead-char" id="cersei" value="euron">
+                    <label for="euron">Cersei Lannister</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="dead-char" id="dany" value="dany">
+                    <label for="dany">Daenerys Targaeryan</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="dead-char" id="euron" value="euron">
+                    <label for="euron">Euron Greyjoy</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="dead-char" id="jaime" value="jaime">
+                    <label for="jaime">Jaime Lannister</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="dead-char" id="jon" value="jon">
+                    <label for="jon">Jon Snow</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="dead-char" id="peter" value="peter">
+                    <label for="peter">Peter Baelish</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="dead-char" id="sandor" value="sandor">
+                    <label for="sandor">Sandor Clegane</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="dead-char" id="sansa" value="sansa">
+                    <label for="sansa">Sansa Stark</label>
+                </div>
+                
+                <div>
+                    <input type="checkbox" name="dead-char" id="gregor" value="gregor">
+                    <label for="gregor">The Mountain</label>
+                </div>
+                <div>
+                    <label for="other">Other <small>(describe below)</small>:</label>
+                    <input type="text" id="other" name="other" placeholder="Other option">
+                </div>
+            </fieldset>
+            <hr>
+            <section id=comments>
+                <label for="comments-area">Any sugestion or commentary about the season and the site?</label>
+                <textarea name="comments-area" id="comments-area" cols="30" rows="10" placeholder="Add here your sugestion or commentary"></textarea>
+            </section>
+            <hr>
+
+            <button type="submit" id="submit">Submit</button>
+
+
+        </form>
+        
+    </main>
+
+</body>
+</html>

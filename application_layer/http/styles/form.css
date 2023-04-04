@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+
+@font-face {
+    font-family: 'got';
+    src: url('../fonts/game_of_thrones-webfont.woff2') format('woff2'),
+         url('../fonts/game_of_thrones-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-image: url("../images/background-1920.png");
+    color: white;
+    background-size: contain;
+
+}
+
+
+#title{
+    font-family: got, sans-serif, monospace;
+    text-align: center;
+    padding: 50px 50px 10px 50px;
+    position: relative;
+    bottom: 20px;
+}
+
+#description{
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+#survey-form{
+
+    display: flex;
+    flex-direction: column;
+    font-family:'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    border-style: solid;
+    background-color: rgba(12 ,12 ,12, 0.5);
+    border-width: 5px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 5% 20% 20% 20%;
+    padding: 1% 5%;
+    line-height: 3em;
+    text-align: justify;
+}
+
+#survey-form p{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 1em;
+    font-weight: 600;
+
+}
+
+.input-text{
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2em;
+
+    
+}
+.input-text input{
+    font-size: 1em;
+}
+
+#best-div{
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+#best-div select{
+    font-size: 1em;
+}
+
+#strong-div{
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+#strong-div input{
+    font-size: 1em;
+}
+#strong-div div{
+    font-weight: 200;
+}
+
+#weak-div input{
+    font-size: 1em;
+}
+
+#weak-div div{
+    font-weight: 200;
+}
+#weak-div{
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+#dead-list{
+    font-weight: 600;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#dead-list legend{
+    line-height: 1em;
+    text-align: justify;
+}
+#dead-list div{
+    line-height: 1em;
+    font-weight: 200;
+    font-size: 0.8em
+
+}
+
+#comments{
+    display: flex;
+    flex-direction: column;
+}
+
+#comments label{
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+#comments textarea{
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 800px){
+    #survey-form{
+        margin: 3%;
+    }
+
+}
+

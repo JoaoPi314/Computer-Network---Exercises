@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #d3d3d3, #a0a0a0);
+}
+
+/********** Header configuration **************/
+
+#header{
+    display: flex;
+    flex-direction: row;
+    background-color: #404040;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+}
+
+#title{
+    color: white;
+    font-weight: 600;
+}
+.logo{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+#header-img{
+    height: 60px;
+}
+
+#nav-bar{
+    flex: 1;
+    text-align: right;
+    position: relative;
+    color: white;
+}
+
+#menu{
+    display: inline-block;
+    list-style-type: none;
+}
+
+#menu li{
+    display: inline-block;
+    padding-right: 100px;
+    font-size: 1.1em;
+}
+
+#menu a{
+    text-decoration: none;
+    color: white;
+}
+
+/********** Content configuration **************/
+
+#main-div{
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 50px;
+    justify-items: center;
+}
+
+
+#get-update{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit{
+    padding: 10px;
+    background-color: indigo;
+    border-radius: 10%;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+#submit:hover{
+    background-color: deeppink;
+    cursor: pointer;
+}
+
+#features{
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    color: purple;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+#delivery{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#delivery p{
+    padding-left: 16px;
+}
+
+#bonus{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#bonus p{
+    padding-left: 10px;
+}
+
+#quality{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#quality p{
+    padding-left: 20px;
+}
+
+
+.fas, .far{
+    font-size: 3em;
+    color: purple;
+}
+
+
+#video{
+    max-width: 100%;
+    width: 640px;
+    height: 400px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.5s;
+    padding-bottom: 10px;
+}   
+
+.item img{
+    width: 400px;
+    padding: 50px;
+}
+
+.item:hover{
+    cursor: pointer;
+    border-style:ridge;
+    box-shadow: 50px 50px 10px black;
+}
+
+.classification .fas, .classification .far{
+    font-size: 1em;
+}
+
+
+.social-media{
+    padding: 40px 100px 40px 100px;
+}
+
+.fab{
+    font-size: 4em;
+    transition: color 0.5s;
+}
+
+.fab:hover{
+    cursor: pointer;
+}
+
+.fa-instagram:hover{
+    color: #8a3ab9;
+}
+
+.fa-facebook-f:hover{
+    color: #4267b2;
+}
+.fa-twitter:hover{
+    color: #1da1f2;
+}
+
+.fa-whatsapp:hover{
+    color: #25d366;
+}
+
+
+/********** Footer configuration **************/
+
+#footer{
+    background-color: #404040;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#footer p{
+    text-align: center;
+}
+
+/********** media_query **************/
+
+@media only screen and (max-width: 600px){
+    #title{
+        font-size: 1em;
+    }
+    #header-img{
+        height: 40px;
+    }  
+}
